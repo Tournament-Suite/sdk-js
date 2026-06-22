@@ -1,0 +1,36 @@
+{
+  "name": "@tournamentsuite/sdk",
+  "version": "1.0.0",
+  "description": "Official TypeScript SDK for the Tournament Suite API",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "test": "vitest run",
+    "lint": "eslint src/"
+  },
+  "keywords": ["tournamentsuite", "esports", "tournament", "sdk", "api"],
+  "license": "MIT",
+  "homepage": "https://tournamentsuite.com/developer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tournament-Suite/sdk-js"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.8.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
