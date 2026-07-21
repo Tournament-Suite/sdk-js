@@ -5,6 +5,9 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -29,7 +32,7 @@
   "homepage": "https://tournamentsuite.com/developer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tournament-Suite/sdk-js"
+    "url": "git+https://github.com/Tournament-Suite/sdk-js.git"
   },
   "dependencies": {
     "socket.io-client": "^4.8.0"
